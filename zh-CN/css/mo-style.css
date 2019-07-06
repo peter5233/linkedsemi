@@ -4,6 +4,10 @@ body {
   padding-top: 56px;
 }
 
+.navbar-brand{
+  height: 32px !important;
+}
+
 .nav-link {
   font-size:18px;
   /*font-weight: bold;*/
@@ -23,6 +27,19 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.carousel-caption {
+  width:200px;
+  z-index:10;
+  color:#fff;
+  text-align:center;
+  top:50%;
+  left:20%;
+  bottom:auto;
+  -webkit-transform:translate(0, -50%);
+  -ms-transform:translate(0, -50%);
+  transform:translate(0, -50%);
 }
 
 .portfolio-item {
