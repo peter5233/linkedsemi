@@ -1,6 +1,18 @@
 
 body {
+  font-family: "Helvetica Neue","Helvetica","Arial","PingFang SC","Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
   padding-top: 56px;
+}
+
+.nav-link {
+  font-size:18px;
+  /*font-weight: bold;*/
+  margin-right:18px;
+  color:#e5e5e5 !important;
+}
+
+.nav-link:hover {
+  color:#ffffff !important;
 }
 
 .carousel-item {
