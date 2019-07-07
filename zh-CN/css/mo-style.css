@@ -4,6 +4,9 @@ body {
   padding-top: 56px;
 }
 
+/* --------------------------- */
+/* ------ Navbar Styling ----- */
+/* --------------------------- */
 .navbar-brand{
   height: 32px !important;
 }
@@ -19,6 +22,9 @@ body {
   color:#ffffff !important;
 }
 
+/* --------------------------- */
+/* ------ Slide Styling  ----- */
+/* --------------------------- */
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -30,10 +36,10 @@ body {
 }
 
 .carousel-caption {
-  width:200px;
+  width:260px;
   z-index:10;
   color:#fff;
-  text-align:center;
+  text-align:left;
   top:50%;
   left:20%;
   bottom:auto;
@@ -42,6 +48,27 @@ body {
   transform:translate(0, -50%);
 }
 
+.carousel-caption p{
+  font-size:18px;
+  padding:5px 0px 10px 0px;
+
+}
+
 .portfolio-item {
   margin-bottom: 30px;
+}
+
+/* --------------------------- */
+/* ------ Button Styling  ---- */
+/* --------------------------- */
+.btn-action {
+  background: #5B9BD5;
+  border-color: #5B9BD5;
+  color: #FFFFFF;
+}
+
+.btn-action:hover {
+  background: transparent;
+  border-color: #5B9BD5;
+  color: #5B9BD5;
 }
