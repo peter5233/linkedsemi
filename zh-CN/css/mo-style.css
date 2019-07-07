@@ -4,9 +4,9 @@ body {
   padding-top: 56px;
 }
 
-/* --------------------------- */
-/* ------ Navbar Styling ----- */
-/* --------------------------- */
+/* ------------------------------ */
+/* ------ Navbar Styling -------- */
+/* ------------------------------ */
 .navbar-brand{
   height: 32px !important;
 }
@@ -22,9 +22,10 @@ body {
   color:#ffffff !important;
 }
 
-/* --------------------------- */
-/* ------ Slide Styling  ----- */
-/* --------------------------- */
+
+/* ------------------------------ */
+/* ------ Slide Styling  -------- */
+/* ------------------------------ */
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -58,9 +59,10 @@ body {
   margin-bottom: 30px;
 }
 
-/* --------------------------- */
-/* ------ Button Styling  ---- */
-/* --------------------------- */
+
+/* ------------------------------ */
+/* ------ Button Styling  ------- */
+/* ------------------------------ */
 .btn-action {
   background: #5B9BD5;
   border-color: #5B9BD5;
@@ -72,3 +74,164 @@ body {
   border-color: #5B9BD5;
   color: #5B9BD5;
 }
+
+
+/* ------------------------------ */
+/* ---- What&Why Styling  ------- */
+/* ------------------------------ */
+.pitch {
+  padding: 80px 0 80px 0;
+  background: #FFFFFF;
+}
+
+
+.pitch-intro {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 0 100px 0;
+}
+
+.pitch-intro h1 {
+  font-size: 34px;
+  /*font-weight: bold;*/
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #454545;
+  margin: 0 0 40px 0;
+}
+
+
+.pitch-intro p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #A1A1A1;
+  letter-spacing: 0;
+}
+
+.pitch-icon {
+  margin: 5 0 10px 0;
+  background: #5B9BD5;
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.pitch-icon i {
+  /*font-size: 34px;*/
+  color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+}
+
+.pitch-content {
+  padding: 10px 0 10px 0;
+}
+
+.pitch-content h3 {
+  font-size: 21px;
+  /*font-weight: 600;*/
+  line-height: 1.2;
+  letter-spacing: 0;
+  /*color: #454545;*/
+  margin: 0 0 10px 0;
+}
+
+.pitch-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #A1A1A1;
+  letter-spacing: 0;
+}
+
+
+/* ------------------------------ */
+/* ---- Features Styling  ------- */
+/* ------------------------------ */
+
+.features {
+  background: #F9F9F9;
+  padding: 80px 0 80px 0;
+}
+
+.features h2 {
+  font-size: 34px;
+  /*font-weight: bold;*/
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #454545;
+  margin: 0 0 40px 0;
+}
+
+.features h3 {
+  font-size: 21px;
+  /*font-weight: 600;*/
+  line-height: 1.2;
+  letter-spacing: 0;
+  /*color: #454545;*/
+  margin: 0 0 10px 0;
+}
+
+.features p {
+  font-size: 18px;
+  /*font-weight: 400;*/
+  color: #A1A1A1;
+  line-height: 1.5;
+  margin: 10px 0 80px 0;
+}
+
+.features img {
+  margin: 0 auto;
+  max-width:100%;
+}
+
+.features .features-left {
+  padding: 10px 0 0 0;
+}
+
+.features .features-right {
+  padding: 30px 0 0 0;
+}
+
+.features .feature-icon {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.features .feature-icon i {
+  font-size: 20px;
+  color: #5B9BD5;
+}
+
+.features .feature-single {
+  margin-left: 0;
+  margin-bottom: 45px;
+}
+
+.features .feature-single h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #222222;
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+}
+
+.features .feature-single p {
+  font-size: 16px;
+  color: #A1A1A1;
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+}
+
+
+/* ------------------------------ */
+/* ---- Portfolio Styling  ------ */
+/* ------------------------------ */
+
+
+/* ------------------------------ */
+/* ---- Tech Support Styling ---- */
+/* ------------------------------ */
+
