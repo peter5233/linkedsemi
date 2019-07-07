@@ -59,17 +59,13 @@ body {
   margin-bottom: 30px;
 }
 
-
-/* ------------------------------ */
-/* ------ Button Styling  ------- */
-/* ------------------------------ */
-.btn-action {
+.carousel-caption .btn-action {
   background: #5B9BD5;
   border-color: #5B9BD5;
   color: #FFFFFF;
 }
 
-.btn-action:hover {
+.carousel-caption .btn-action:hover {
   background: transparent;
   border-color: #5B9BD5;
   color: #5B9BD5;
@@ -88,7 +84,7 @@ body {
 .pitch-intro {
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 0 100px 0;
+  padding: 0 0 80px 0;
 }
 
 .pitch-intro h1 {
@@ -229,9 +225,82 @@ body {
 /* ------------------------------ */
 /* ---- Portfolio Styling  ------ */
 /* ------------------------------ */
+.portfolio {
+  padding: 80px 0 80px 0;
+  background: #FFFFFF;
+}
+
+.portfolio-intro {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+}
+
+.portfolio-intro h2 {
+  font-size: 34px;
+  /*font-weight: bold;*/
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #454545;
+  margin: 0 0 40px 0;
+}
+
+.portfolio-intro p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #A1A1A1;
+  letter-spacing: 0;
+}
+
+.portfolio a:link{
+  /*color: #A1A1A1;*/
+  text-decoration: underline;
+}
 
 
 /* ------------------------------ */
 /* ---- Tech Support Styling ---- */
 /* ------------------------------ */
+.tech-resource {
+  height:360px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(20, 20, 20, 0.9)), url(../img/background/developer-resources.png) ;
+  /*background: url(../img/background/111.png) ;*/
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
+.tech-resource-inner {
+  padding-top: 100px;
+  max-width: 460px;
+  float: right;
+}
+
+.tech-resource .tech-resource-inner h2 {
+  font-size: 28px;
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.tech-resource .tech-resource-inner p {
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 1.4;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.tech-resource-inner .btn-action {
+  background: #5B9BD5;
+  border-color: #5B9BD5;
+  color: #FFFFFF;
+}
+
+.tech-resource-inner .btn-action:hover {
+  background: transparent;
+  border-color: #5B9BD5;
+  color: #5B9BD5;
+}
