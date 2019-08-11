@@ -63,6 +63,7 @@ body {
   background: #5B9BD5;
   border-color: #5B9BD5;
   color: #FFFFFF;
+  width: 50%;
 }
 
 .carousel-caption .btn-action:hover {
@@ -297,6 +298,7 @@ body {
   background: #5B9BD5;
   border-color: #5B9BD5;
   color: #FFFFFF;
+  width: 85%;
 }
 
 .tech-resource-inner .btn-action:hover {
