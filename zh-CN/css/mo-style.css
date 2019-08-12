@@ -32,6 +32,8 @@ body {
   background-color: #5B9BD5;
   font-family: "Helvetica Neue","Helvetica","Arial","PingFang SC","Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
   /*width: 25%;*/
+  font-size:14px;
+  color:#fff;
 }
 
 #inner-headline ol.breadcrumb li {
@@ -65,6 +67,7 @@ ol.breadcrumb li a:hover {
 .thumbnail:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
+
 
 /* ------------------------------ */
 /* ------ Navbar Styling -------- */
@@ -373,8 +376,157 @@ ol.breadcrumb li a:hover {
 /* ------------------------------ */
 /* ---- About Us / Conact Us ---- */
 /* ------------------------------ */
+
+.company-banner {
+  background: url("../img/company/company-banner1.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 200px;
+  color:#FFFFFF;
+}
+
+.company-banner h3{
+  font-size: 34px;
+  /*font-weight: bold;*/
+  /*line-height: 1.2;*/
+  /*letter-spacing: -1px;*/
+  color: #FFFFFF;
+}
+
+.contact-banner {
+  background: url("../img/company/company-banner2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 200px;
+  color:#FFFFFF;
+}
+
+.contact-banner h3{
+  font-size: 34px;
+  /*font-weight: bold;*/
+  /*line-height: 1.2;*/
+  /*letter-spacing: -1px;*/
+  color: #000000;
+}
+
 .contact-us .solidline {
   border-top:1px solid #EDEDED;
   margin:0 0 30px;
 }
+
+.company-intro {
+  padding: 80px 0 80px 0;
+}
+
+
+.company-intro .solidline {
+  border-top:1px solid #EDEDED;
+  margin:0 0 30px;
+}
+
+
+.company-intro p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #202020;
+  letter-spacing: 0;
+  text-indent: 2em;
+}
+
+.company-strength {
+  background: #F9F9F9;
+  padding: 80px 0 80px 0;
+}
+
+
+.company-strength .table-left, .company-strength .table-center, .company-strength .table-right {
+  padding: 20px 20px 50px 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 80px 0px rgba(0,0,0,.1);
+  border: transparent;
+  max-width: 400px;
+}
+
+.table-left .icon, .table-center .icon, .table-right .icon {
+  padding: 50px 50px 40px 50px;
+}
+
+.table-left .icon img, .table-center .icon img, .table-right .icon img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.table-left .strength-details .shortline, .table-center .strength-details .shortline, .table-right .strength-details .shortline {
+  position:absolute;
+  background:#cccccc;
+  width:40px;
+  height:2px;
+  left:50%;
+  margin-left:-20px;
+  top:175px;
+}
+
+.table-left .strength-details span, .table-center .strength-details span, .table-right .strength-details span {
+  display: inline-block;
+  /*font-family: Poppins;*/
+  font-size: 28px;
+  font-weight: 400;
+  color: #808080;
+  margin-bottom: 20px;
+}
+
+.table-left .strength-details h2, .table-center .strength-details h2, .table-right .strength-details h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #505050;
+  margin-bottom: 30px;
+  /*margin-left: 10%;*/
+}
+
+.table-left .strength-details p, .table-center .strength-details p, .table-right .strength-details p {
+  /*font-family: Poppins;*/
+  font-size: 14px;
+  font-weight: 300;
+  color: #505050;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.table-left .strength-details ul, .table-center .strength-details ul, .table-right .strength-details ul {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.table-left .strength-details li, .table-center .strength-details li, .table-right .strength-details li {
+  /*font-family: Poppins;*/
+  font-size: 14px;
+  font-weight: 400;
+  color: #505050;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.company-strength .table-left:hover, .company-strength .table-center:hover, .company-strength .table-right:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.company-strength .table-left, .company-strength .table-right {
+  margin-top: 20px;
+}
+
+.company-strength .table-center {
+  margin-top: 20px;
+}
+
+
+
 
