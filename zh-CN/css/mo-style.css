@@ -4,6 +4,68 @@ body {
   padding-top: 56px;
 }
 
+
+/* ===================================
+    Inner - Section: page headline
+==================================== */
+#inner-headline{
+  background:#f3f3f3;
+  position:relative;
+  margin:0;
+  padding:0;
+  color:#fefefe;
+}
+
+#inner-headline .page-header {
+  border-bottom:none;
+}
+
+#inner-headline .inner-heading h2 {
+  color:#fff;
+  margin:20px 0 0 0;
+}
+
+/* --- breadcrumbs --- */
+#inner-headline ol.breadcrumb {
+  margin: 30px 0 30px 0;
+  float: left;
+  background-color: #5B9BD5;
+  font-family: "Helvetica Neue","Helvetica","Arial","PingFang SC","Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+  /*width: 25%;*/
+}
+
+#inner-headline ol.breadcrumb li {
+  margin: 0 8px 0 8px;
+  font-size:14px;
+  color:#fff;
+  font-weight: 600;
+}
+
+#inner-headline ol.breadcrumb li i{
+  color:#fff;
+}
+
+#inner-headline ol.breadcrumb li a {
+  color:#fff;
+}
+
+ol.breadcrumb li a:hover {
+  text-decoration:none;
+}
+
+
+.thumbnail {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 100%; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+.thumbnail:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
 /* ------------------------------ */
 /* ------ Navbar Styling -------- */
 /* ------------------------------ */
@@ -20,6 +82,10 @@ body {
 
 .nav-link:hover {
   color:#ffffff !important;
+}
+
+.nav-item.active {
+  font-weight: bold;
 }
 
 
@@ -81,7 +147,6 @@ body {
   background: #FFFFFF;
 }
 
-
 .pitch-intro {
   max-width: 600px;
   margin: 0 auto;
@@ -96,7 +161,6 @@ body {
   color: #454545;
   margin: 0 0 40px 0;
 }
-
 
 .pitch-intro p {
   font-size: 18px;
@@ -147,7 +211,6 @@ body {
 /* ------------------------------ */
 /* ---- Features Styling  ------- */
 /* ------------------------------ */
-
 .features {
   background: #F9F9F9;
   padding: 80px 0 80px 0;
@@ -306,3 +369,12 @@ body {
   border-color: #5B9BD5;
   color: #5B9BD5;
 }
+
+/* ------------------------------ */
+/* ---- About Us / Conact Us ---- */
+/* ------------------------------ */
+.contact-us .solidline {
+  border-top:1px solid #EDEDED;
+  margin:0 0 30px;
+}
+
