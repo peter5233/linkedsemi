@@ -68,7 +68,10 @@ ol.breadcrumb li a:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-
+.solidline {
+  border-top:1px solid #EDEDED;
+  margin:0 0 30px;
+}
 /* ------------------------------ */
 /* ------ Navbar Styling -------- */
 /* ------------------------------ */
@@ -374,11 +377,60 @@ ol.breadcrumb li a:hover {
 }
 
 /* ------------------------------ */
+/* ---------- Products  --------- */
+/* ------------------------------ */
+.products-banner {
+  background: url("../img/company/banner1.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 200px;
+  color:#FFFFFF;
+}
+
+.products-banner h3{
+  font-size: 34px;
+  /*font-weight: bold;*/
+  /*line-height: 1.2;*/
+  /*letter-spacing: -1px;*/
+  color: #FFFFFF;
+}
+
+.products-overview {
+  padding: 80px 0 40px 0;
+}
+
+/*.products-overview .solidline {
+  border-top:1px solid #EDEDED;
+  margin:0 0 30px;
+}
+*/
+
+.products-overview p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #202020;
+  letter-spacing: 0;
+  text-indent: 2em;
+}
+
+
+.products-list {
+  padding: 40px 0 80px 0;
+  background: #FFFFFF;
+}
+
+.products-list .sheet-table{
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* ------------------------------ */
 /* ---- About Us / Conact Us ---- */
 /* ------------------------------ */
 
 .company-banner {
-  background: url("../img/company/company-banner1.jpg");
+  background: url("../img/company/banner7.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -395,7 +447,7 @@ ol.breadcrumb li a:hover {
 }
 
 .contact-banner {
-  background: url("../img/company/company-banner3.jpg");
+  background: url("../img/company/banner3.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -411,21 +463,19 @@ ol.breadcrumb li a:hover {
   color: #000000;
 }
 
-.contact-us .solidline {
+/*.contact-us .solidline {
   border-top:1px solid #EDEDED;
   margin:0 0 30px;
 }
-
+*/
 .company-intro {
   padding: 80px 0 80px 0;
 }
 
-
-.company-intro .solidline {
+/*.company-intro .solidline {
   border-top:1px solid #EDEDED;
   margin:0 0 30px;
-}
-
+}*/
 
 .company-intro p {
   font-size: 18px;
@@ -439,7 +489,6 @@ ol.breadcrumb li a:hover {
   background: #F9F9F9;
   padding: 80px 0 80px 0;
 }
-
 
 .company-strength .table-left, .company-strength .table-center, .company-strength .table-right {
   padding: 20px 20px 50px 20px;
