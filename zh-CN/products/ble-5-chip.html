@@ -11,7 +11,7 @@
 
 <link rel="shortcut icon" href="../img/company/icon.png" type="image/png" sizes="16x16">
 
-<title>低功耗蓝牙 LE51 系列芯片 | Bluetooth Low Energy 5.1 Chips | LinkedSEMI 凌思微电子</title>
+<title>低功耗蓝牙 LE5 系列芯片 | Bluetooth Low Energy 5 Chips | LinkedSEMI 凌思微电子</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -87,7 +87,7 @@ h3.li  {
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html">首页</a></li>
                 <li class="breadcrumb-item"><a href="./bluetooth-low-energy-chips.html">低功耗蓝牙</a></li>
-                <li class="breadcrumb-item">LE51系列</li>
+                <li class="breadcrumb-item">LE5系列</li>
             </ol>
           </div>
         </div>
@@ -100,48 +100,30 @@ h3.li  {
         <div class="row">
           <div class="col-lg-12">
 
-            <h1 align="center">低功耗蓝牙 LE51 系列芯片</h1>
+            <h1 align="center">低功耗蓝牙 LE5 系列芯片</h1>
 
             <br><br>
 
             <div class="solidline"></div>
             <h2>概述</h2>
-            <p>LE51系列是高性能的低功耗蓝牙系统级芯片（SoC），支持最新蓝牙5.1标准，具备蓝牙5.1的AoA（到达角）和AoD（发出角）“寻向”功能，可以应用于物品追踪、高精度室内定位等场景。</p>
+            <p>LE5系列是高性能的低功耗蓝牙系统级芯片（SoC），支持蓝牙5标准，支持蓝牙SIG组织颁布的MESH（无线自组网通信技术），可以应用于智慧家居、智慧楼宇等需要大量节点接入的场景。</p>
 
-            <div class="row">
-              <div class="col-md-7">
-                <br>
-                <h3 class=li>Angle of Arrival (AoA / 到达角)</h3>
-                <ul>
-                  <li>Beacon与Locator建立蓝牙连接；</li>
-                  <li>Beacon使用单个天线发射信号；</li>
-                  <li>Locator使用天线阵列接收信号；</li>
-                  <li>接收信号时因到达时间不同，不同天线上产生相位差，以求Beacon方位；</li>
-                  <li>典型应用是停车场寻车，通过钥匙（Locator）分辨汽车（Beacon）方位；</li>
-                </ul>
-              </div>
-              <div class="col-md-5">
-                <img class="img-fluid" src="../img/products/angle-of-arrival.png" alt="低功耗蓝牙, Angle of Arrival, AoA, 到达角, BLE 5.1" width="70%" align="right">
-              </div>
-            </div>
-            <br><br>
+            <br>
+            <h3 class=li>蓝牙MESH无线自组网</h3>
+            <ul>
+              <li>由SIG组织在2017年颁布，是无线自组网技术领域的最新国际标准；</li>
+              <li>它使得节点在更广泛区域中进行互联，通过中继方式传输信号，扩大信号覆盖范围和网络容量；</li>
+              <li>采用Flooding中继机制，相比其他MESH技术（如ZigBee），Flooding实现方案更轻量更简单；</li>
+              <li>通过引入Friendship角色，让电池供电的节点在保持低功耗的同时，也能参与MESH网络通信；</li>
+              <li>节点通过“发布与订阅”的方式收发消息，支持消息的单播、组播及群播；</li>
+              <li>设计了多层次网络及应用程序的加密和鉴权功能，让通信安全更有保障；</li>
+            </ul>
+            <br>
 
-            <div class="row">
-              <div class="col-md-7">
-                <br>
-                <h3 class=li>Angle of Departure (AoD / 发出角)</h3>
-                <ul>
-                  <li>Beacon与Mobile无需建立蓝牙连接；</li>
-                  <li>Beacon使用天线阵列发射信号；</li>
-                  <li>Mobile使用单个天线接收信号；</li>
-                  <li>Mobile获取与各个Beacon的相对角度，综合角度信息计算自己的位置；</li>
-                  <li>典型应用是商场导航，用户手机Mobile扫描Beacon，在地图上求得位置；</li>
-                </ul>
-              </div>
-              <div class="col-md-5">
-                <img class="img-fluid" src="../img/products/angle-of-departure.png" alt="低功耗蓝牙, Angle of Departure, AoD, 发出角, BLE 5.1" width="95%" align="right">
-              </div>
+            <div align="center">
+              <img class="img-fluid" src="../img/products/ble-mesh-network.jpg"  alt="BLE MESH, 无线自组网, BLE 5, Friendship, 友元">
             </div>
+
             <br><br>
 
             <div class="solidline"></div>
@@ -151,7 +133,7 @@ h3.li  {
               <div class="col-md-7">
                 <h3 class=li>BLE RF Transceiver</h3>
                 <ul>
-                  <li>2.4GHz RF transceiver for BLE 5.1;</li>
+                  <li>2.4GHz RF transceiver for BLE 5;</li>
                   <li>125K/250K/500K/1M/2M bps data rate;</li>
                   <li>-105dBm RX sensitivity @BLE 125Kbps;</li>
                   <li>Programmable TX power up to +12dBm;</li>
@@ -162,7 +144,7 @@ h3.li  {
                 <br>
                 <h3 class=li>BLE Protocol</h3>
                 <ul>
-                  <li>BLE 5.1 with AoA / AoD feature;</li>
+                  <li>BLE 5 standard;</li>
                   <li>SIG BLE MESH / Proprietary BLE MESH;</li>
                 </ul>
 
@@ -209,7 +191,7 @@ h3.li  {
             <h2>系统框图</h2>
             <br>
             <div align="center">
-              <img class="img-fluid" src="../img/products/ble-51-chip-block.png" alt="低功耗蓝牙, BLE 5.1, 芯片框图">
+              <img class="img-fluid" src="../img/products/ble-5-chip-block.png" alt="低功耗蓝牙, BLE 5.1, 芯片框图">
             </div>
             <br><br>
 
@@ -218,7 +200,7 @@ h3.li  {
 
             <ul class="downloads">
               <li>
-                <p><i class="fa fa-file-pdf-o"></i><a href="#">  LE51-datasheet.pdf (等待上传)</a></p>
+                <p><i class="fa fa-file-pdf-o"></i><a href="#">  LE5-datasheet.pdf (等待上传)</a></p>
               </li>
             </ul>
             <br>
