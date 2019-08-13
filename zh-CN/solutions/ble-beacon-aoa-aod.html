@@ -11,7 +11,7 @@
 
 <link rel="shortcut icon" href="../img/company/icon.png" type="image/png" sizes="16x16">
 
-<title>智能家居 | BLE MESH 灯控 | LinkedSEMI 凌思微电子</title>
+<title>蓝牙信标 | BLE Beacon | BLE 5.1 AoA AoD | LinkedSEMI 凌思微电子</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -82,7 +82,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html">首页</a></li>
                 <li class="breadcrumb-item">应用方案</li>
-                <li class="breadcrumb-item">智能家居</li>
+                <li class="breadcrumb-item">蓝牙信标</li>
             </ol>
           </div>
         </div>
@@ -95,70 +95,104 @@
         <div class="row">
           <div class="col-lg-12">
 
-            <h1 align="center">智能家居MESH无线自组网解决方案</h1>
+            <h1 align="center">蓝牙信标“寻向功能”解决方案</h1>
 
             <br><br>
 
             <div class="solidline"></div>
             <h2>概述</h2>
-            <p>随着物联网的发展，零散的、功能单一的家电设备会被逐步淘汰，智能家居必将成为今后的流行趋势。从最初简单的蓝牙灯控，到时下流行的天猫精灵，以及未来的全屋智能，蓝牙技术在智能家居的互联互通方面起到的重要性不言而喻。</p>
-            <br>
+            <p>蓝牙信标，即蓝牙beacon，是一种基于蓝牙的消息广播，它已在很多商场有部署，实现室内定位与导航的新型应用。</p>
 
-            <h3 class=li>问题的产生：星型网络的不足</h3>
-            <p>在蓝牙MESH颁布以前，基于蓝牙v4.2或Wi-Fi的智能家居设备大多采用中心式新型网络，这种网络结构严重限制了无线信号的可覆盖范围，造成智能家居方案只能接入一部分的设备节点，难以真正做到“全屋智能”。</p>
+            <p>蓝牙信标的工作方式很简单，Beacon向周边广播自己的ID，当用户靠近Beacon，其手机APP接收到来自Beacon的广播，APP根据广播ID触发一些任务，如显示用户当前位置信息，或者当前商品信息。</p>
 
             <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/smart-home-star-network.jpg" alt="智能家居, 中心式星型网络的不足">
-              <p class="imgdesc">Fig 1. 中心式星型网络的不足</p>
+              <img class="img-fluid" src="../img/bluetooth/beacon-application.jpg" alt="低功耗蓝牙信标, Beacon, iBeacon">
+              <p class="imgdesc">Fig 1. 蓝牙信标应用</p>
             </div>
+
             <br>
 
+            <h3 class=li>问题的产生：不具备方向信息，以及定位准确度不足</h3>
+            <p>实现优质LBS服务的前提是需要良好的Beacon定位准确度。在蓝牙v5.1之前，Beacon的定位原理是基于蓝牙信号RSSI（接收方所收到蓝牙信号的强度）推测出目标的相对距离，此类算法无法辨别目标方向信息，另外，由于RSSI易受到外部环境干扰，稳定性不佳，所以Beacon定位准确度不高，通常定位精度在1~2米及以上。</p>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/bluetooth/beacon-RSSI.jpg" width="520" alt="基于RSSI的BLE Beacon定位方案">
+              <p class="imgdesc">Fig 2. 基于RSSI的BLE Beacon定位方案</p>
+            </div>
+
+            <br>
             <div class="solidline"></div>
-            <h2>MESH解决方案</h2>
-            <p>蓝牙SIG于2017年颁布MESH无线自组网协议标准，它使得节点可以在更广泛的区域中进行互联，通过节点与节点之间的中继来传输信号，从而扩大一个网络的可覆盖范围。</p>
+            <h2>Beacon寻向解决方案</h2>
+            <p>蓝牙5.1新增了“寻向”功能，可以获取目标与参考点之间的角度关系，从而辨别目标方向。结合RSSI与角度信息，定位精度可达厘米级别。</p>
 
             <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/smart-home-mesh-network.jpg" alt="智能家居, MESH无线自组网网络的优势">
-              <p class="imgdesc">Fig 2. MESH无线自组网网络的优势</p>
+              <img class="img-fluid" src="../img/bluetooth/beacon-angle.jpg" width="500" alt="基于Angle的BLE Beacon定位方案">
+              <p class="imgdesc">Fig 3. 基于角度/方向的BLE Beacon定位方案</p>
             </div>
 
-            <p>Zigbee也是一种以MESH著称的无线通信技术，蓝牙MESH相比Zigbee至少有如下几方面的技术先进性：</p>
+            <p>蓝牙信标的基础硬件组成主要包含蓝牙芯片、（多）天线、电池和外壳，LinkedSEMI的蓝牙5.1芯片体积小巧，功耗非常低，以每1秒钟发送1次蓝牙广播为例，LE51系列的平均功耗约为10uA，可以由一颗纽扣电池续航数年之久。</p>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/bluetooth/beacon-hardware.jpg" width="540" alt="Beacon硬件组成">
+              <p class="imgdesc">Fig 4. Beacon硬件组成</p>
+            </div>
+
+            <p>根据信号的收、发情况，寻向算法可以分为AoA（到达角）和AoD（发出角）两种模式。</p>
+
+            <br>
+            <div class="solidline"></div>
+            <h2>Angle of Arrival (AoA / 到达角)</h2>
+            <p>算法原理：</p>
             <ul>
-              <li>蓝牙作为一种基础的通信标准，被全球手机厂商所采纳，可以与智能手机直接通信；</li>
-              <li>蓝牙MESH采用Flooding（泛洪广播）通信机制，其协议的实现方案更轻量、更简单；</li>
-              <li>引入Friendship角色，让电池供电的设备在保持低功耗的同时，也能参与MESH通信；</li>
-              <li>设计了多个层次的网络及应用程序加密和鉴权功能，让蓝牙MESH通信更安全、难破解；</li>
+              <li>Beacon与Locator建立蓝牙连接；</li>
+              <li>Beacon使用单个天线发射信号；</li>
+              <li>Locator使用天线阵列接收信号；</li>
+              <li>因接收信号在不同天线上到达时间不同，产生相位差，通过相位差推测Beacon方向；</li>
             </ul>
 
-            <p>对于智能家居而言，各类设备都可以接入蓝牙MESH网络，每个设备可以担任不同角色，由上层应用统筹控制，实现“全屋智能”。</p>
             <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/ble-mesh-network.jpg"  alt="BLE MESH, 无线自组网, BLE 5, Friendship, 友元">
-              <p class="imgdesc">Fig 3. 蓝牙MESH网络拓扑</p>
+              <img class="img-fluid" src="../img/bluetooth/angle-of-arrival.png" width="400"  alt="BLE 5.1 AoA angle-of-arrival 特性">
+              <p class="imgdesc">Fig 5. 蓝牙5.1 AoA寻向</p>
+            </div>
+
+            <p>典型应用：</p>
+            <ul>
+              <li>汽车上安装Beacon；</li>
+              <li>汽车钥匙作为Locator，支持2根以上的多天线设计；</li>
+              <li>钥匙接收到Beacon信号，分辨方位，引导车主寻车，引导方式可以在钥匙上构建能够表示方向的指示灯；</li>
+            </ul>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/bluetooth/aoa-parking.jpg" width="500"  alt="BLE 5.1 AoA 停车场寻车">
+              <p class="imgdesc">Fig 6. AoA停车场寻车</p>
             </div>
 
             <br>
-
             <div class="solidline"></div>
-            <h2>蓝牙MESH智能灯控</h2>
-            <p>以“智能灯控”为例，LinkedSEMI的新型蓝牙芯片体积十分小巧（5mm*5mm），支持蓝牙MESH通信标准，还具备互补PWM输出，可以同时控制冷光/暖光双路LED。通过集成该芯片，即可让传统LED灯具拥有互联功能。</p>
-            <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/ble-smart-light.jpg"  alt="BLE智能灯控, MESH智能灯, BLE SMART LIGHT">
-              <p class="imgdesc">Fig 4. 蓝牙MESH智能灯控</p>
-            </div>
-
-            <p>蓝牙MESH的出现，让网络节点具备灵活的寻址方式（单播、组播、广播），这使得智能灯拥有更加丰富的产品形态，发挥出“场景化”的创新灯控应用，比如您可以一键控制卧室里所有的灯，或者将客厅里的灯调节为派对模式。</p>
-            <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/ble-mesh-address.jpg"  alt="BLE MESH寻址模式, 单播, 组播, 广播">
-              <p class="imgdesc">Fig 5. BLE MESH寻址模式</p>
-            </div>
-
-            <br>
+            <h2>Angle of Departure (AoD / 发出角)</h2>
+            <p>算法原理：</p>
+            <ul>
+              <li>Beacon与Mobile无需建立蓝牙连接；</li>
+              <li>Beacon使用天线阵列发射信号；</li>
+              <li>Mobile使用单个天线接收信号；</li>
+              <li>Mobile获取与各个Beacon的相对角度，综合角度信息计算自己的位置；</li>
+            </ul>
 
             <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/ble-smart-light-application.jpg"  alt="BLE智能灯控">
-              <p class="imgdesc">Fig 6. BLE MESH赋能灯控创新应用</p>
+              <img class="img-fluid" src="../img/bluetooth/angle-of-departure.png" width="480"  alt="BLE 5.1 AoD angle-of-departure 特性">
+              <p class="imgdesc">Fig 7. 蓝牙5.1 AoD寻向</p>
             </div>
-            <br>
+
+            <p>典型应用：</p>
+            <ul>
+              <li>商场内部署多个Beacon，部署越多精度越高；</li>
+              <li>用户手机作为Mobile，运行Beacon扫描程序；</li>
+              <li>手机通过AoD算法求得位置，在地图上更新状态；</li>
+            </ul>
+            <div align="center">
+              <img class="img-fluid" src="../img/bluetooth/aod-shopping-mall-navigation.jpg" width="500"  alt="BLE 5.1 AoD 购物商场室内导航">
+              <p class="imgdesc">Fig 8. AoD商场室内导航</p>
+            </div>
 
           </div>
         </div>
