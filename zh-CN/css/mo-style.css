@@ -72,6 +72,18 @@ ol.breadcrumb li a:hover {
   border-top:1px solid #EDEDED;
   margin:0 0 30px;
 }
+
+ul.downloads {
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  list-style:none;
+  display:inline-block;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+  /*font-size: 16px;*/
+  /*font-weight: 400;*/
+  color: #333333 ;
+}
+
 /* ------------------------------ */
 /* ------ Navbar Styling -------- */
 /* ------------------------------ */
@@ -400,12 +412,6 @@ ol.breadcrumb li a:hover {
   padding: 80px 0 40px 0;
 }
 
-/*.products-overview .solidline {
-  border-top:1px solid #EDEDED;
-  margin:0 0 30px;
-}
-*/
-
 .products-overview p {
   font-size: 18px;
   line-height: 1.2;
@@ -424,6 +430,20 @@ ol.breadcrumb li a:hover {
   vertical-align: middle;
   text-align: center;
 }
+
+.product-detail {
+  padding: 80px 0 40px 0;
+}
+
+.product-detail p {
+  padding: 20px 0 20px 0;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #202020;
+  letter-spacing: 0;
+  /*text-indent: 2em;*/
+}
+
 
 /* ------------------------------ */
 /* ---- About Us / Conact Us ---- */
