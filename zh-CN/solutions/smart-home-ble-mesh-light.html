@@ -11,11 +11,15 @@
 
 <link rel="shortcut icon" href="../img/company/icon.png" type="image/png" sizes="16x16">
 
-<title>公司介绍 | LinkedSEMI 凌思微电子</title>
+<title>智能家居 | BLE MESH 灯控 | LinkedSEMI 凌思微电子</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link href="../css/mo-style.css" rel="stylesheet" type="text/css" media="all">
+
+<style>
+
+</style>
 
 </head>
 
@@ -42,7 +46,7 @@
               <a class="dropdown-item" href="../products/bluetooth-low-energy-chips.html">低功耗蓝牙</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownApplications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">应用方案</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownApplications">
               <a class="dropdown-item" href="../solutions/smart-home-ble-mesh-light.html">智能家居</a>
@@ -56,7 +60,7 @@
               <a class="dropdown-item" href="../documents/ble-SDK-manual.html">SDK开发指南</a>
             </div>
           </li>
-          <li class="nav-item dropdown active">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">关于我们</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAbout">
               <a class="dropdown-item" href="../company/about-us.html">公司介绍</a>
@@ -69,18 +73,7 @@
     </div>
   </nav>
 
-  <header>
-    <div class="company-banner">
-      <div class="container">
-        <!-- <div class="row"> -->
-          <br><br><br>
-          <h3>连接，创造价值</h3>
-        <!-- </div> -->
-      </div>
-    </div>
-  </header>
 
-<!--
   <section id="inner-headline">
     <div class="container">
       <div class="page-header">
@@ -88,82 +81,90 @@
           <div class="col-lg-12">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html">首页</a></li>
-                <li class="breadcrumb-item active">关于我们</li>
-                <li class="breadcrumb-item active">公司介绍</li>
+                <li class="breadcrumb-item">应用方案</li>
+                <li class="breadcrumb-item">智能家居</li>
             </ol>
           </div>
         </div>
       </div>
     </div>
   </section>
- -->
-  <!-- <div class="container"> -->
 
-  <div id="companyIntro" class="company-intro text-left">
+  <div id="solutionDetail" class="solution-detail text-left">
     <div class="container">
         <div class="row">
           <div class="col-lg-12">
 
-            <h1 align="center">凌思微电子有限公司</h1>
+            <h1 align="center">智能家居MESH无线自组网方案</h1>
 
             <br><br>
 
-            <p>凌思微（LinkedSEMI）电子成立于2019年，是国内专业无线IC产品供应商及应用解决方案提供商，提供可授权的低功耗蓝牙（Bluetooth Low Energy）、私有2.4GHz、和Sub-GHz无线通讯软硬件IP及芯片产品，为物联网应用提供基础技术。</p>
+            <div class="solidline"></div>
+            <h2>概述</h2>
+            <p>随着物联网的发展，零散的、功能单一的家电设备会被逐步淘汰，智能家居必将成为今后的流行趋势。从最初简单的蓝牙灯控，到时下流行的天猫精灵，以及未来的全屋智能，蓝牙技术在智能家居的互联互通方面起到的重要性不言而喻。</p>
+            <br>
 
-            <p>公司主营业务是无线通讯芯片的设计及销售，提供相关的技术解决方案服务，涉及行业有智能照明、智能家居、可穿戴、无线玩具、智慧零售等相关领域。</p>
+            <h3 class=li>问题的产生：星型网络的不足</h3>
+            <p>在蓝牙MESH颁布以前，基于蓝牙v4.2或Wi-Fi的智能家居设备大多采用中心式新型网络，这种网络结构严重限制了无线信号的可覆盖范围，造成智能家居方案只能接入一部分的设备节点，难以真正做到“全屋智能”。</p>
 
-            <p>团队成员拥有高水平的芯片设计能力和物联网开发经验，秉持“工匠”精神，开发性能卓越的无线芯片，全力帮助客户优化无线连接、构建垂直行业解决方案，发挥科技引领的创新和价值。</p>
+            <div align="center">
+              <img class="img-fluid" src="../img/products/smart-home-star-network.jpg" alt="智能家居, 中心式星型网络的不足">
+              <p class="imgdesc">Fig 1. 中心式星型网络的不足</p>
+            </div>
+            <br>
+
+            <div class="solidline"></div>
+            <h2>MESH解决方案</h2>
+            <p>蓝牙SIG于2017年颁布MESH无线自组网协议标准，它使得节点可以在更广泛的区域中进行互联，通过节点与节点之间的中继来传输信号，从而扩大一个网络的可覆盖范围。</p>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/products/smart-home-mesh-network.jpg" alt="智能家居, MESH无线自组网网络的优势">
+              <p class="imgdesc">Fig 2. MESH无线自组网网络的优势</p>
+            </div>
+
+            <p>Zigbee也是一种以MESH著称的无线通信技术，蓝牙MESH相比Zigbee至少有如下几方面的技术先进性：</p>
+            <ul>
+              <li>蓝牙作为一种基础的通信标准，被全球手机厂商所采纳，可以与智能手机直接通信；</li>
+              <li>蓝牙MESH采用Flooding（泛洪广播）通信机制，其协议的实现方案更轻量、更简单；</li>
+              <li>引入Friendship角色，让电池供电的设备在保持低功耗的同时，也能参与MESH通信；</li>
+              <li>设计了多个层次的网络及应用程序加密和鉴权功能，让蓝牙MESH通信更安全、难破解；</li>
+            </ul>
+
+            <p>对于智能家居而言，各类设备都可以接入蓝牙MESH网络，每个设备可以担任不同角色，由上层应用统筹控制，实现“全屋智能”。</p>
+            <div align="center">
+              <img class="img-fluid" src="../img/products/ble-mesh-network.jpg"  alt="BLE MESH, 无线自组网, BLE 5, Friendship, 友元">
+              <p class="imgdesc">Fig 3. 蓝牙MESH网络拓扑</p>
+            </div>
+
+            <br>
+
+            <div class="solidline"></div>
+            <h2>蓝牙MESH智能灯控</h2>
+            <p>以“智能灯控”为例，LinkedSEMI的新型蓝牙芯片体积十分小巧（5mm*5mm），支持蓝牙MESH通信标准，还具备互补PWM输出，可以同时控制冷光/暖光双路LED。通过集成该芯片，即可让传统LED灯具拥有互联功能。</p>
+            <div align="center">
+              <img class="img-fluid" src="../img/products/ble-smart-light.jpg"  alt="BLE智能灯控, MESH智能灯, BLE SMART LIGHT">
+              <p class="imgdesc">Fig 4. 蓝牙MESH智能灯控</p>
+            </div>
+
+            <p>蓝牙MESH的出现，让网络节点具备灵活的寻址方式（单播、组播、广播），这使得智能灯拥有更加丰富的产品形态，发挥出“场景化”的创新灯控应用，比如您可以一键控制卧室里所有的灯，或者将客厅里的灯调节为派对模式。</p>
+            <div align="center">
+              <img class="img-fluid" src="../img/products/ble-mesh-address.jpg"  alt="BLE MESH寻址模式, 单播, 组播, 广播">
+              <p class="imgdesc">Fig 5. BLE MESH寻址模式</p>
+            </div>
+
+            <br>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/products/ble-smart-light-application.jpg"  alt="BLE智能灯控">
+              <p class="imgdesc">Fig 6. BLE MESH赋能灯控创新应用</p>
+            </div>
+            <br>
+
           </div>
         </div>
     </div>
   </div>
 
-  <div id="companyStrength" class="company-strength text-center">
-    <div class="container">
-      <h2>核心技术优势</h2>
-      <br>
-      <br>
-      <div class="row">
-
-        <div class="col-sm-4">
-          <div class="table-left">
-            <div class="icon">
-              <img src="../img/company/icon-wireless.png"/>
-            </div>
-            <div class="strength-details">
-              <div class="shortline"><br /></div>
-              <h2>卓越的射频性能</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="table-center">
-            <div class="icon">
-              <img src="../img/company/icon-mcu.png"/>
-            </div>
-            <div class="strength-details">
-              <div class="shortline"><br /></div>
-              <h2>强大的外设集成</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="table-right">
-            <div class="icon">
-              <img src="../img/company/icon-sdk.png"/>
-            </div>
-            <div class="strength-details">
-              <div class="shortline"><br /></div>
-              <h2>平台化的软件开发</h2>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
   <!-- </div> -->
   <!-- /.container -->
 
