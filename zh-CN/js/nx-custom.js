@@ -31,21 +31,21 @@ jQuery(function($) {
   /*-----------------------------------
   ----------- Scroll To Top -----------
   ------------------------------------*/
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 1000) {
-        $('#back-top').fadeIn();
-    } else {
-        $('#back-top').fadeOut();
-    }
-  });
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > 1000) {
+  //       $('#back-top').fadeIn();
+  //   } else {
+  //       $('#back-top').fadeOut();
+  //   }
+  // });
 
   // scroll body to 0px on click
-  $('#back-top').click(function(){
-    $('#back-top').tooltip('hide');
-    $("html, body").animate({ scrollTop: 0 }, 1000);
-      // $('#back-top').fadeIn();
-      return false;
-  });
+  // $('#back-top').click(function(){
+  //   $('#back-top').tooltip('hide');
+  //   $("html, body").animate({ scrollTop: 0 }, 1000);
+  //     // $('#back-top').fadeIn();
+  //     return false;
+  // });
 
 
   /* --------- Wow Init ------ */
