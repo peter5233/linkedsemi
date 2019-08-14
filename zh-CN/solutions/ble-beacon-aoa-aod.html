@@ -51,7 +51,7 @@
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownApplications">
               <a class="dropdown-item" href="../solutions/smart-home-ble-mesh-light.html">智能家居</a>
               <a class="dropdown-item" href="../solutions/ble-beacon-aoa-aod.html">蓝牙信标</a>
-              <a class="dropdown-item" href="../solutions/smart-wearables.html">智能可穿戴</a>
+              <a class="dropdown-item" href="../solutions/smart-ble-wearable.html">智能可穿戴</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -103,7 +103,7 @@
             <h2>概述</h2>
             <p>蓝牙信标，即蓝牙beacon，是一种基于蓝牙的消息广播，它已在很多商场有部署，实现室内定位与导航的新型应用。</p>
 
-            <p>蓝牙信标的工作方式很简单，Beacon向周边广播自己的ID，当用户靠近Beacon，其手机APP接收到来自Beacon的广播，APP根据广播ID触发一些任务，如显示用户当前位置信息，或者当前商品信息。</p>
+            <p>蓝牙信标的工作方式很简单，Beacon向周边广播自己的ID，当用户靠近Beacon，其手机APP接收到来自Beacon的广播，APP根据广播的ID触发一些任务，如显示用户当前位置信息，或者当前商品信息。</p>
 
             <div align="center">
               <img class="img-fluid" src="../img/bluetooth/beacon-application.jpg" alt="低功耗蓝牙信标, Beacon, iBeacon">
@@ -130,14 +130,20 @@
               <p class="imgdesc">Fig 3. 基于角度/方向的BLE Beacon定位方案</p>
             </div>
 
-            <p>蓝牙信标的基础硬件组成主要包含蓝牙芯片、（多）天线、电池和外壳，LinkedSEMI的蓝牙5.1芯片体积小巧，功耗非常低，以每1秒钟发送1次蓝牙广播为例，LE51系列的平均功耗约为10uA，可以由一颗纽扣电池续航数年之久。</p>
+            <p>蓝牙信标的基础硬件组成主要包含蓝牙芯片、（多）天线、电池和外壳。</p>
 
             <div align="center">
               <img class="img-fluid" src="../img/bluetooth/beacon-hardware.jpg" width="540" alt="Beacon硬件组成">
               <p class="imgdesc">Fig 4. Beacon硬件组成</p>
             </div>
 
-            <p>根据信号的收、发情况，寻向算法可以分为AoA（到达角）和AoD（发出角）两种模式。</p>
+            <br>
+
+            <h3 class=li>针对蓝牙信标，LinkedSEMI芯片具备以下特征：</h3>
+            <ul>
+              <li>支持蓝牙v5.1标准，根据信号的收、发情况，寻向算法可以分为AoA（到达角）和AoD（发出角）两种模式；</li>
+              <li>功耗非常低，以每1秒钟发送1次蓝牙广播为例，LE51系列的平均功耗约为10uA，可以由一颗纽扣电池续航数年之久；</li>
+            </ul>
 
             <br>
             <div class="solidline"></div>

@@ -11,7 +11,7 @@
 
 <link rel="shortcut icon" href="../img/company/icon.png" type="image/png" sizes="16x16">
 
-<title>智能家居 | BLE MESH 灯控 | LinkedSEMI 凌思微电子</title>
+<title>智能可穿戴 | Smart Wearable | LinkedSEMI 凌思微电子</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -82,7 +82,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html">首页</a></li>
                 <li class="breadcrumb-item">应用方案</li>
-                <li class="breadcrumb-item">智能家居</li>
+                <li class="breadcrumb-item">智能可穿戴</li>
             </ol>
           </div>
         </div>
@@ -95,78 +95,86 @@
         <div class="row">
           <div class="col-lg-12">
 
-            <h1 align="center">智能家居MESH无线自组网解决方案</h1>
+            <h1 align="center">蓝牙智能可穿戴解决方案</h1>
 
             <br><br>
 
             <div class="solidline"></div>
             <h2>概述</h2>
-            <p>随着物联网的发展，零散的、功能单一的家电设备会被逐步淘汰，智能家居必将成为今后的流行趋势。从最初简单的蓝牙灯控，到时下流行的天猫精灵，以及未来的全屋智能，蓝牙技术在智能家居的互联互通方面起到的重要性不言而喻。</p>
-            <br>
+            <p>可穿戴设备正在从概念热走向产品热，主流的可穿戴设备包括智能手表、腕带、手环、智能助听器、智能眼镜、头盔、头带等。根据IDC的研究报告，预计到2023年可穿戴设备的市场出货量将达到1.2亿台。</p>
 
-            <h3 class=li>问题的产生：星型网络的不足</h3>
-            <p>在蓝牙MESH颁布以前，基于蓝牙v4.2或Wi-Fi的智能家居设备大多采用中心式新型网络，这种网络结构严重限制了无线信号的可覆盖范围，造成智能家居方案只能接入一部分的设备节点，难以真正做到“全屋智能”。</p>
 
             <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/smart-home-star-network.jpg" alt="智能家居, 中心式星型网络的不足">
-              <p class="imgdesc">Fig 1. 中心式星型网络的不足</p>
+              <img class="img-fluid" src="../img/bluetooth/smart-wearables2.jpg" width="500" alt="低功耗蓝牙智能可穿戴">
+              <p class="imgdesc">Fig 1. 可穿戴产品</p>
+            </div>
+
+            <br>
+
+            <h3 class=li>问题的产生：功耗需要更低、体积需要更小</h3>
+            <p>可穿戴设备的体积小巧，这限制了大容量电池的使用，而小容量电池的频繁充电会造成糟糕的用户体验，继而对设备功耗提出更高的要求。</p>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/bluetooth/wearable-low-power.jpg" width="400" alt="低功耗蓝牙智能可穿戴设备电量不足">
+              <p class="imgdesc">Fig 2. 可穿戴设备电量不足</p>
+            </div>
+
+            <p>另一方面，越来越多的外围器件需要连接到可穿戴主控芯片上，如人体传感器、运动传感器、环境传感器、LCD液晶屏……，为了让BOM有更少的器件、尺寸和成本，这需要主控芯片有强大的外设集成能力。</p>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/bluetooth/wearable-small.jpg" width="380" alt="低功耗蓝牙智能可穿戴设备电量不足">
+              <p class="imgdesc">Fig 3. 可穿戴设备体积小巧</p>
+            </div>
+
+            <br>
+            <div class="solidline"></div>
+            <h2>智能可穿戴解决方案</h2>
+            <h3 class=li>以智能手环为例，LinkedSEMI蓝牙芯片具备以下特征：</h3>
+            <ul>
+              <li>功耗非常低，射频收发状态的功耗小于4.5mA（@+0dBm 3.3V TX），待机状态的功耗为1uA；</li>
+              <li>具备丰富外设，包含12-bit ADC、I2C和SPI总线、及电容式触摸按键，节省BOM体积和成本；</li>
+              <li>易用的SDK开发平台，嵌入式应用层软件可以轻松获取序列式传感器数据，并构建特定算法；</li>
+            </ul>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/bluetooth/wearable-hardware.jpg" width="500" alt="蓝牙可穿戴设备硬件结构">
+              <p class="imgdesc">Fig 4. 可穿戴设备硬件结构</p>
+            </div>
+
+            <br>
+            <div class="solidline"></div>
+            <h2>低功耗设计，延长电池续航</h2>
+
+            <p>不管蓝牙芯片处于广播或处于与手机连接的状态，广播包或数据包总是以一定间隔进行收发。在收发包以外的大部分时间里，芯片处于Idle状态（待机）。LinkedSEMI的LE50/51系列芯片，收发包的功耗小于4.5mA，典型待机的功耗为1uA。以Master和Slave每秒钟通信1次为例， 芯片平均功耗仅为约6uA。</p>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/bluetooth/ble-power-consumption.png"  width="540" alt="低功耗蓝牙收发包、idle平均电流功耗">
+              <p class="imgdesc">Fig 5. 低功耗蓝牙芯片收发包、idle平均电流及功耗</p>
+            </div>
+
+            <br>
+            <div class="solidline"></div>
+            <h2>支持电容式触摸，节省BOM体积和成本</h2>
+
+            <p>LinkedSEMI的蓝牙芯片内部包含RC振荡器与时序比较模块，支持电容式触摸按键的直接接入，可通过按键唤醒MCU，让可穿戴设备拥有更少的BOM器件，节省成本与体积。</p>
+
+            <div align="center">
+              <img class="img-fluid" src="../img/bluetooth/capacitive-touch-screen-interface.jpg" width="600" alt="电容式触摸按键">
+              <p class="imgdesc">Fig 6. 支持电容式触摸按键</p>
             </div>
             <br>
 
             <div class="solidline"></div>
-            <h2>MESH解决方案</h2>
-            <p>蓝牙SIG于2017年颁布MESH无线自组网协议标准，它使得节点可以在更广泛的区域中进行互联，通过节点与节点之间的中继来传输信号，从而扩大一个网络的可覆盖范围。</p>
+            <h2>SDK开发框架，轻松构建传感器算法</h2>
+
+            <p>运动传感器是可穿戴设备常用器件，通过LinkedSEMI的SDK开发框架，可以将传感器数据轻松陈列给上层用户程序，使其构建特定的传感器算法。</p>
 
             <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/smart-home-mesh-network.jpg" alt="智能家居, MESH无线自组网网络的优势">
-              <p class="imgdesc">Fig 2. MESH无线自组网网络的优势</p>
-            </div>
-
-            <p>Zigbee也是一种以MESH著称的无线通信技术，蓝牙MESH相比Zigbee至少有如下几方面的技术先进性：</p>
-            <ul>
-              <li>蓝牙作为一种基础的通信标准，被全球手机厂商所采纳，可以与智能手机直接通信；</li>
-              <li>蓝牙MESH采用Flooding（泛洪广播）通信机制，其协议的实现方案更轻量、更简单；</li>
-              <li>引入Friendship角色，让电池供电的设备在保持低功耗的同时，也能参与MESH通信；</li>
-              <li>设计了多个层次的网络及应用程序加密和鉴权功能，让蓝牙MESH通信更安全、难破解；</li>
-            </ul>
-
-            <p>对于智能家居而言，各类设备都可以接入蓝牙MESH网络，每个设备可以担任不同角色，由上层应用统筹控制，实现“全屋智能”。</p>
-            <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/ble-mesh-network.jpg"  alt="BLE MESH, 无线自组网, BLE 5, Friendship, 友元">
-              <p class="imgdesc">Fig 3. 蓝牙MESH网络拓扑</p>
+              <img class="img-fluid" src="../img/bluetooth/wearable-imu-sensor-accelerometer.jpg" width="500" alt="低功耗蓝牙与三轴加速度计传感器">
+              <p class="imgdesc">Fig 7. 运动传感器与算法</p>
             </div>
 
             <br>
-
-            <div class="solidline"></div>
-            <h2>蓝牙MESH智能灯控</h2>
-
-            <h3 class=li>以智能灯控为例，LinkedSEMI蓝牙芯片具备以下特征：</h3>
-            <ul>
-              <li>芯片体积十分小巧，QFN32封装的尺寸为5mm*5mm；</li>
-              <li>支持SIG MESH及私有MESH通信协议，网络可容纳节点数量理论可达65535个；</li>
-              <li>支持互补PWM输出，可以同时控制冷光/暖光双路LED；</li>
-            </ul>
-
-            <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/ble-smart-light.jpg"  alt="BLE智能灯控, MESH智能灯, BLE SMART LIGHT">
-              <p class="imgdesc">Fig 4. 蓝牙MESH智能灯控</p>
-            </div>
-
-            <p>蓝牙MESH的出现，让网络节点具备灵活的寻址方式（单播、组播、广播），这使得智能灯拥有更加丰富的产品形态，发挥出“场景化”的创新灯控应用，比如您可以一键控制卧室里所有的灯，或者将客厅里的灯调节为派对模式。</p>
-            <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/ble-mesh-address.jpg"  alt="BLE MESH寻址模式, 单播, 组播, 广播">
-              <p class="imgdesc">Fig 5. BLE MESH寻址模式</p>
-            </div>
-
-            <br>
-
-            <div align="center">
-              <img class="img-fluid" src="../img/bluetooth/ble-smart-light-application.jpg"  alt="BLE智能灯控">
-              <p class="imgdesc">Fig 6. BLE MESH赋能灯控创新应用</p>
-            </div>
-            <br>
-
           </div>
         </div>
     </div>
